@@ -4,4 +4,24 @@
 .second{
     background-color: #345ABC;
 }
-
+.third{
+    background-color: #A4532B;
+}
+tr{
+    background-color: #AAA
+}
+th, td{
+    text-align: center;
+    font-size: 10rem;
+}
+.small-table{
+    display: inline-block;
+    max-width: 70%;
+}
+.container{
+    margin: auto;
+    display:inline;
+}
+table{
+    background-color: black;
+}
