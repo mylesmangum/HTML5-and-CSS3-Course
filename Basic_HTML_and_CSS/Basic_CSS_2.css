@@ -5,13 +5,16 @@ p{
     text-align: center;
     font-size: 30px;
     display: inline;
-    
+    box-shadow: 2px 2px black;
     padding: 20px;
 }
 p:hover{
     background-color: #333;
+    text-shadow: none;
 }
-
+p{
+    text-shadow: 2px 2px black;
+}
 div{
     margin-top: 30px;
     text-align: center;
