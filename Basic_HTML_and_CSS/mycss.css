@@ -17,6 +17,7 @@ th, td{
 td:hover{
     cursor: pointer;
     border: 5px solid black;
+
 }
 .small-table{
     display: inline-block;
