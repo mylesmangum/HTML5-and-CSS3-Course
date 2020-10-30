@@ -11,29 +11,30 @@
     <title>Academy Cinemas</title>
   </head>
   <body class="">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
       <div class="collapse navbar-collapse container" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#jumbotron">About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#showtimes">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
           </li>
         </ul>
-        <span class="navbar-text">
-          Academy Cinemas
-        </span>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
   </nav>
     <div class="container">
         
 
           <!-- Jumbotron banner -->
-        <div class="jumbotron bg-blue mb-0">
+        <div class="jumbotron bg-blue mb-0" id="jumbotron">
             <h1 class="display-4">Academy Cinemas</h1>
             
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptate dolorem in placeat quidem? Reprehenderit voluptas, ducimus eveniet nobis et vero nulla? Dolores tempora unde perferendis? Expedita aliquam rem autem.</p>
@@ -42,14 +43,16 @@
             <a class="btn btn-info btn-lg" href="#" role="button">Learn more</a>
         </div>
 
-        <div class="container bg-blue">
+        <div class="container bg-blue" id="showtimes">
           <h2>Showtimes:</h2>
-          <div class="row ">
+          <div class="row">
             <div class="card" style="width: 23rem;">
               <img src="./beautyandthebeast.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Beauty And The Beast</h5>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, fugit.</p>
+                <p class="card-text">A selfish prince is cursed to become a monster for the rest of his life, unless he learns to fall in love
+                  with a beautiful young woman, he keeps prisoner
+                </p>
                 <span class="badge badge-info mb-2 p-3">12:00 p.m.</span>
                 <span class="badge badge-info mb-2 p-3">1:30 p.m.</span>
                 <span class="badge badge-info mb-2 p-3">3:00 p.m.</span>
@@ -62,7 +65,9 @@
               <img src="./ghostintheshell.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Ghost In The Shell</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, distinctio!</p>
+                <p class="card-text">In the near future, Major Mila Kilian is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced
+                  to be a perfect soldier devoted to stopping the world's most dangerous criminals
+                </p>
                 <span class="badge badge-info mb-2 p-3">12:00 p.m.</span>
               <span class="badge badge-info mb-2 p-3">1:30 p.m.</span>
               <span class="badge badge-info mb-2 p-3">3:00 p.m.</span>
@@ -75,7 +80,9 @@
               <img src="./kongskullisland.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Kong Skull Island</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, molestiae.</p>
+                <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the
+                  domain of the mighty Kong, and must fight to excape a primal Eden.
+                </p>
                 <span class="badge badge-info mb-2 p-3">12:00 p.m.</span>
               <span class="badge badge-info mb-2 p-3">1:30 p.m.</span>
               <span class="badge badge-info mb-2 p-3">3:00 p.m.</span>
@@ -88,8 +95,8 @@
         </div>
 
 
-<!--         
-        <form class="bg-blue mb-5">
+        
+        <form class="bg-blue mb-5" id="pricing">
             
             <div class="form-group ">
               <label for="exampleFormControlSelect1">Movies in Theaters Now</label>
@@ -109,12 +116,32 @@
                 <option>7:00 P.M.</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <label for="card-number">Payment Info</label>
+                    <input type="card" class="form-control" id="card-number" placeholder="Card Number">
+                    <input type="card" class="form-control" id="card-year-month" placeholder="MM / YY">
+                    <input type="card" class="form-control" id="cvc" placeholder="CVC">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <label for="name">Contact Info / Billing Address</label>
+                  <input type="name" class="form-control" id="card-number" placeholder="Full Name">
+                  <input type="address" class="form-control" id="card-year-month" placeholder="Address">
+                  <input type="number" class="form-control" id="cvc" placeholder="Phone Number">
+                  </div>
+                </div>
+              </div>
             </div>
-            <a href="#" class="btn  btn-info">Add to Cart</a>
-          </form> -->
+            
+              <a href="#" class="btn  btn-info">Add to Cart</a>
+          </form>
 
           
 
