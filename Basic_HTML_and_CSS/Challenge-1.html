@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My picture edited</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./D1MiRgq.jpg" alt="Spooky">
+        <div class="center-text">Boo</div>
+    </div>
+    
+    <style>
+        img{
+            display: block;
+            width: 50%;
+            margin: auto;
+            filter: invert(100%);
+            border-radius: 10%;
+            position: relative;
+        }
+        .container{
+            position: relative;
+            text-align: center;
+            font-size: 3rem;
+        }
+        .center-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</body>
+</html>
